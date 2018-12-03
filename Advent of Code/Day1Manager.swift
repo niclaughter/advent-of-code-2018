@@ -1,5 +1,5 @@
 //
-//  AdventManager.swift
+//  Day1Manager.swift
 //  Advent of Code
 //
 //  Created by Nic Laughter on 12/3/18.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct AdventManager {
+struct Day1Manager {
     
     let input = """
 +12

@@ -14,7 +14,7 @@
 		FD56D1B921B5A0000067C39C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD56D1B721B5A0000067C39C /* LaunchScreen.storyboard */; };
 		FD56D1C421B5A0000067C39C /* Advent_of_CodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD56D1C321B5A0000067C39C /* Advent_of_CodeTests.swift */; };
 		FD56D1CF21B5A0000067C39C /* Advent_of_CodeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD56D1CE21B5A0000067C39C /* Advent_of_CodeUITests.swift */; };
-		FD56D1DE21B5A0360067C39C /* AdventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD56D1DD21B5A0360067C39C /* AdventManager.swift */; };
+		FD56D1DE21B5A0360067C39C /* Day1Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD56D1DD21B5A0360067C39C /* Day1Manager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +48,7 @@
 		FD56D1CA21B5A0000067C39C /* Advent of CodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Advent of CodeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD56D1CE21B5A0000067C39C /* Advent_of_CodeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advent_of_CodeUITests.swift; sourceTree = "<group>"; };
 		FD56D1D021B5A0000067C39C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FD56D1DD21B5A0360067C39C /* AdventManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventManager.swift; sourceTree = "<group>"; };
+		FD56D1DD21B5A0360067C39C /* Day1Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day1Manager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				FD56D1AE21B59FFE0067C39C /* AppDelegate.swift */,
-				FD56D1DD21B5A0360067C39C /* AdventManager.swift */,
+				FD56D1DD21B5A0360067C39C /* Day1Manager.swift */,
 				FD56D1B021B59FFE0067C39C /* ViewController.swift */,
 				FD56D1B221B59FFE0067C39C /* Main.storyboard */,
 				FD56D1DC21B5A0130067C39C /* Resources */,
@@ -267,7 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD56D1DE21B5A0360067C39C /* AdventManager.swift in Sources */,
+				FD56D1DE21B5A0360067C39C /* Day1Manager.swift in Sources */,
 				FD56D1B121B59FFE0067C39C /* ViewController.swift in Sources */,
 				FD56D1AF21B59FFE0067C39C /* AppDelegate.swift in Sources */,
 			);
