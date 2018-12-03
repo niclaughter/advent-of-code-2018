@@ -1024,8 +1024,28 @@ struct AdventManager {
 +73808
 """
     
+    var allInts: [Int] {
+        return self.input.components(separatedBy: "\n").compactMap { Int(String($0)) }
+    }
+    
     func getPosition() -> Int {
-        let numbers = input.components(separatedBy: "\n").compactMap { Int(String($0)) }
-        return numbers.reduce(0, +)
+        return self.allInts.reduce(0, +)
+    }
+    
+    func checkFirstDuplicateFrequency() -> Int {
+        var currentFrequency = 0
+        var frequencies: Set<Int> = [0]
+        var hasFoundDuplicate = false
+        
+        while !hasFoundDuplicate {
+            self.allInts.forEach {
+                guard !hasFoundDuplicate else { return }
+                currentFrequency += $0
+                guard frequencies.contains(currentFrequency) else { frequencies.insert(currentFrequency); return }
+                hasFoundDuplicate = true
+                return
+            }
+        }
+        return currentFrequency
     }
 }
