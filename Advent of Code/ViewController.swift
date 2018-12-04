@@ -30,5 +30,6 @@ class ViewController: UIViewController {
         print("\n\n\nDay 3")
         let day3 = Day3Manager()
         print(day3.compareCuts())
+        print(day3.intactID())
     }
 }

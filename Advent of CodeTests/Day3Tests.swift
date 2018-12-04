@@ -20,12 +20,6 @@ class Day3Tests: XCTestCase {
 #3 @ 5,5: 2x2
 """
         XCTAssertEqual(4, manager.compareCuts(with: testInputs))
-        
-//        XCTAssertEqual(4, Day03([
-//            ]).overlapCount)
-//
-//        let day3 = Day3Manager()
-//        print("03a: \(day3.overlapCount)")
-//        print("03b: \(day3.code)")
+        XCTAssertEqual("3", manager.intactID(from: testInputs))
     }
 }

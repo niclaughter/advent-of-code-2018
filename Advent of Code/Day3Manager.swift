@@ -1321,20 +1321,40 @@ struct Day3Manager {
         let width: Int
         let height: Int
         
-        struct Point: Hashable {
+        struct Point: Hashable, Equatable {
             let x: Int
             let y: Int
+            
+            static func ==(lhs: Point, rhs: Point) -> Bool {
+                return lhs.x == rhs.x && lhs.y == rhs.y
+            }
         }
         
         var cuts: Set<Point> {
             var points: Set<Point> = []
             
-            for i in self.left + 1...self.width + self.left {
-                for n in self.top + 1...self.height + self.top {
+            for i in self.widthRange {
+                for n in self.heightRange {
                     points.insert(Point(x: i, y: n))
                 }
             }
             return points
+        }
+        
+        var widthRange: [Int] {
+            var range: [Int] = []
+            for i in self.left + 1...self.width + self.left {
+                range.append(i)
+            }
+            return range
+        }
+        
+        var heightRange: [Int] {
+            var range: [Int] = []
+            for i in self.top + 1...self.height + self.top {
+                range.append(i)
+            }
+            return range
         }
         
         init?(input: String) {
@@ -1358,10 +1378,10 @@ struct Day3Manager {
         return inputString.components(separatedBy: "\n").compactMap { Cut(input: $0) }
     }
     
-    func compareCuts(with input: String? = nil) -> Int {
+    func compareCuts(with inputs: String? = nil) -> Int {
         var allCuts: Set<Cut.Point> = []
         var overlappingCuts: Set<Cut.Point> = []
-        let inputs = getAllCuts(from: input ?? self.input)
+        let inputs = getAllCuts(from: inputs ?? self.input)
         for input in inputs {
             for cut in input.cuts {
                 if allCuts.contains(cut), !overlappingCuts.contains(cut) {
@@ -1372,5 +1392,38 @@ struct Day3Manager {
             }
         }
         return overlappingCuts.count
+    }
+    
+    private func checkIntersection(lhs: Cut, rhs: Cut) -> Bool {
+        
+        return false
+    }
+    
+    func intactID(from inputs: String? = nil) -> String {
+        let inputs = getAllCuts(from: inputs ?? self.input)
+        for (i, input) in inputs.enumerated() {
+            var intact = true
+            for (n, comparableInput) in inputs.enumerated() where i != n && intact {
+                var wBroke = false
+                var hBroke = false
+                for w in input.widthRange where !wBroke {
+                    if comparableInput.widthRange.contains(w) {
+                        wBroke = true
+                        break
+                    }
+                }
+                for h in input.heightRange where !hBroke {
+                    if comparableInput.heightRange.contains(h) {
+                        hBroke = true
+                        break
+                    }
+                }
+                intact = !(wBroke && hBroke)
+            }
+            if intact {
+                return input.id
+            }
+        }
+        return ""
     }
 }

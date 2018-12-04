@@ -38,16 +38,6 @@
                ReferencedContainer = "container:Advent of Code.xcodeproj">
             </BuildableReference>
          </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FD56D1C921B5A0000067C39C"
-               BuildableName = "Advent of CodeUITests.xctest"
-               BlueprintName = "Advent of CodeUITests"
-               ReferencedContainer = "container:Advent of Code.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
