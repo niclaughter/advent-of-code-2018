@@ -26,5 +26,9 @@ class ViewController: UIViewController {
         let day2 = Day2Manager()
         print(day2.getChecksum())
         print(day2.checkMatchingID())
+        
+        print("\n\n\nDay 3")
+        let day3 = Day3Manager()
+        print(day3.compareCuts())
     }
 }

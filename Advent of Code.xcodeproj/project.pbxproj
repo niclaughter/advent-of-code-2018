@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		FD54659C21B6E70000F68B7E /* Day1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD54659B21B6E70000F68B7E /* Day1Tests.swift */; };
+		FD54659E21B6F38B00F68B7E /* Day3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD54659D21B6F38B00F68B7E /* Day3Tests.swift */; };
+		FD5465A021B6F47100F68B7E /* Day3Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD54659F21B6F47100F68B7E /* Day3Manager.swift */; };
 		FD56D1AF21B59FFE0067C39C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD56D1AE21B59FFE0067C39C /* AppDelegate.swift */; };
 		FD56D1B121B59FFE0067C39C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD56D1B021B59FFE0067C39C /* ViewController.swift */; };
 		FD56D1B421B59FFE0067C39C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD56D1B221B59FFE0067C39C /* Main.storyboard */; };
@@ -38,6 +40,8 @@
 
 /* Begin PBXFileReference section */
 		FD54659B21B6E70000F68B7E /* Day1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day1Tests.swift; sourceTree = "<group>"; };
+		FD54659D21B6F38B00F68B7E /* Day3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day3Tests.swift; sourceTree = "<group>"; };
+		FD54659F21B6F47100F68B7E /* Day3Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day3Manager.swift; sourceTree = "<group>"; };
 		FD56D1AB21B59FFE0067C39C /* Advent of Code.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Advent of Code.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD56D1AE21B59FFE0067C39C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD56D1B021B59FFE0067C39C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +111,7 @@
 				FD56D1AE21B59FFE0067C39C /* AppDelegate.swift */,
 				FD56D1DD21B5A0360067C39C /* Day1Manager.swift */,
 				FDF6F63B21B5EA5500853A79 /* Day2Manager.swift */,
+				FD54659F21B6F47100F68B7E /* Day3Manager.swift */,
 				FD56D1B021B59FFE0067C39C /* ViewController.swift */,
 				FD56D1B221B59FFE0067C39C /* Main.storyboard */,
 				FD56D1DC21B5A0130067C39C /* Resources */,
@@ -120,6 +125,7 @@
 				FD56D1C521B5A0000067C39C /* Info.plist */,
 				FD54659B21B6E70000F68B7E /* Day1Tests.swift */,
 				FDF6F63E21B5F18E00853A79 /* Day2Tests.swift */,
+				FD54659D21B6F38B00F68B7E /* Day3Tests.swift */,
 				FDF6F63D21B5F18E00853A79 /* Advent of CodeTests-Bridging-Header.h */,
 			);
 			path = "Advent of CodeTests";
@@ -280,6 +286,7 @@
 				FD56D1B121B59FFE0067C39C /* ViewController.swift in Sources */,
 				FD56D1AF21B59FFE0067C39C /* AppDelegate.swift in Sources */,
 				FDF6F63C21B5EA5500853A79 /* Day2Manager.swift in Sources */,
+				FD5465A021B6F47100F68B7E /* Day3Manager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +296,7 @@
 			files = (
 				FD54659C21B6E70000F68B7E /* Day1Tests.swift in Sources */,
 				FDF6F63F21B5F18E00853A79 /* Day2Tests.swift in Sources */,
+				FD54659E21B6F38B00F68B7E /* Day3Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
