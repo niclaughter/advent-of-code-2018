@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Advent of Code
+//  advent-of-code
 //
-//  Created by Nic Laughter on 12/3/18.
+//  Created by Nic Laughter on 12/4/18.
 //  Copyright © 2018 Gaire Tech, LLC. All rights reserved.
 //
 
