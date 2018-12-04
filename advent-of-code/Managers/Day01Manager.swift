@@ -1042,7 +1042,8 @@ struct Day01Manager {
             positions.forEach {
                 guard !hasFoundDuplicate else { return }
                 currentFrequency += $0
-                guard frequencies.contains(currentFrequency) else { frequencies.insert(currentFrequency); return }
+                guard frequencies.contains(currentFrequency)
+                    else { frequencies.insert(currentFrequency); return }
                 hasFoundDuplicate = true
                 return
             }

@@ -96,9 +96,7 @@
 				FDE40ED621B736E500F70A48 /* Managers */,
 				FDE40EDF21B7371E00F70A48 /* ViewController.swift */,
 				FDE40EB121B7365000F70A48 /* Main.storyboard */,
-				FDE40EB421B7365000F70A48 /* Assets.xcassets */,
-				FDE40EB621B7365000F70A48 /* LaunchScreen.storyboard */,
-				FDE40EB921B7365000F70A48 /* Info.plist */,
+				FDE40EE121B737A400F70A48 /* Resources */,
 			);
 			path = "advent-of-code";
 			sourceTree = "<group>";
@@ -125,6 +123,16 @@
 				FDE40ED921B736F800F70A48 /* Day04Manager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		FDE40EE121B737A400F70A48 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FDE40EB421B7365000F70A48 /* Assets.xcassets */,
+				FDE40EB621B7365000F70A48 /* LaunchScreen.storyboard */,
+				FDE40EB921B7365000F70A48 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -401,7 +409,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B24U63J96U;
-				INFOPLIST_FILE = "advent-of-code/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/advent-of-code/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -419,7 +427,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B24U63J96U;
-				INFOPLIST_FILE = "advent-of-code/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/advent-of-code/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

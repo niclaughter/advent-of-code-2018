@@ -1102,35 +1102,57 @@ struct Day04Manager {
     struct Entry {
         let date: Date
         let description: String
+        var minute: Int {
+            let cal = Calendar.current
+            return cal.component(.minute, from: self.date)
+        }
         var guardID: Int? {
             let nonNums = CharacterSet(charactersIn: "0123456789").inverted
-            guard let id = (self.description.components(separatedBy: nonNums).filter { !$0.isEmpty }).first,
+            guard let id = (self.description.components(separatedBy: nonNums)
+                .filter { !$0.isEmpty })
+                .first,
                 let guardID = Int(id) else { return nil }
             return guardID
         }
         private var dateFormatter: DateFormatter = {
             let formatter = DateFormatter()
             formatter.dateFormat = "yyyy-MM-dd HH:mm"
+            formatter.timeZone = TimeZone(secondsFromGMT: 0)
             return formatter
         }()
         
         init?(input: String) {
             let separationCharacters = CharacterSet(charactersIn: "[]")
-            let components = input.components(separatedBy: separationCharacters).filter { !$0.isEmpty }
+            let components = input
+                .components(separatedBy: separationCharacters)
+                .filter { !$0.isEmpty }
             guard let dateString = components.first,
                 let date = self.dateFormatter.date(from: dateString),
                 let descriptionWithSpace = components.last else { return nil }
             var description = descriptionWithSpace
-            description.remove(at: description.index(descriptionWithSpace.startIndex, offsetBy: 0))
+            description.remove(at: description.index(descriptionWithSpace.startIndex,
+                                                     offsetBy: 0))
+            print(dateString)
+            print(date)
             self.date = date
             self.description = description
         }
     }
     
-    func computeGuardAndMinute(from input: String? = nil) -> Int {
-        var entries = (input ?? self.input).components(separatedBy: "\n").compactMap { Entry(input: $0) }
+    private func getSortedEntries(from input: String) -> [Entry] {
+        var entries = input.components(separatedBy: "\n").compactMap { Entry(input: $0) }
         entries.sort(by: { $0.date < $1.date })
-        for entry in entries {
+        return entries
+    }
+    
+    private func computeSleepiestGuard(from entries: [Entry]) -> Int {
+        
+        
+        return 0
+    }
+    
+    func computeGuardAndMinute(from input: String? = nil) -> Int {
+        for entry in getSortedEntries(from: input ?? self.input) {
             print("\(entry.date): \(entry.description)")
         }
         return 0

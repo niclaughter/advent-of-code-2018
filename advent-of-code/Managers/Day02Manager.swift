@@ -310,7 +310,8 @@ ztmgyjjpruszlbaqwfichvtneo
                 }
                 if mismatchCount == 1 {
                     var returnID = id
-                    returnID.remove(at: returnID.index(returnID.startIndex, offsetBy: mismatchIndex))
+                    returnID.remove(at: returnID.index(returnID.startIndex,
+                                                       offsetBy: mismatchIndex))
                     return returnID
                 }
             }

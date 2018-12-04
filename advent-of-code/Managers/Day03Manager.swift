@@ -1359,7 +1359,9 @@ struct Day03Manager {
         
         init?(input: String) {
             let separationCharacters = CharacterSet(charactersIn: "0123456789").inverted
-            var components = input.components(separatedBy: separationCharacters).filter { !$0.isEmpty }
+            var components = input
+                .components(separatedBy: separationCharacters)
+                .filter { !$0.isEmpty }
             guard let height = Int(components.popLast() ?? "0"),
                 let width = Int(components.popLast() ?? "0"),
                 let top = Int(components.popLast() ?? "0"),
