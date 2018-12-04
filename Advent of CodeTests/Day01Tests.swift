@@ -1,5 +1,5 @@
 //
-//  Day1Tests.swift
+//  Day01Tests.swift
 //  Advent of CodeTests
 //
 //  Created by Nic Laughter on 12/4/18.
@@ -9,7 +9,7 @@
 import XCTest
 @testable import Advent_of_Code
 
-class Day1Tests: XCTestCase {
+class Day01Tests: XCTestCase {
     
     func testPart1() {
         let testFreqs = """
@@ -17,7 +17,7 @@ class Day1Tests: XCTestCase {
 -2
 +4
 """
-        XCTAssertEqual(3, Day1Manager().getPosition(in: testFreqs))
+        XCTAssertEqual(3, Day01Manager().getPosition(in: testFreqs))
     }
     
     func testPart2() {
@@ -46,7 +46,7 @@ class Day1Tests: XCTestCase {
 -7
 -4
 """
-        let manager = Day1Manager()
+        let manager = Day01Manager()
         XCTAssertEqual(0, manager.checkFirstDuplicateFrequency(in: testFreqs1))
         XCTAssertEqual(10, manager.checkFirstDuplicateFrequency(in: testFreqs2))
         XCTAssertEqual(5, manager.checkFirstDuplicateFrequency(in: testFreqs3))

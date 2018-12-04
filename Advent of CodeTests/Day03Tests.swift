@@ -1,5 +1,5 @@
 //
-//  Day3Tests.swift
+//  Day03Tests.swift
 //  Advent of CodeTests
 //
 //  Created by Nic Laughter on 12/4/18.
@@ -9,10 +9,10 @@
 import XCTest
 @testable import Advent_of_Code
 
-class Day3Tests: XCTestCase {
+class Day03Tests: XCTestCase {
     
     func test03() {
-        let manager = Day3Manager()
+        let manager = Day03Manager()
         
         let testInputs = """
 #1 @ 1,3: 4x4"

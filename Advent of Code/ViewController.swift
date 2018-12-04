@@ -17,19 +17,19 @@ class ViewController: UIViewController {
     }
     
     func runAdvent() {
-        print("\n\n\nDay 1")
-        let day1 = Day1Manager()
-        print(day1.getPosition())
-        print(day1.checkFirstDuplicateFrequency())
-        
-        print("\n\n\nDay 2")
-        let day2 = Day2Manager()
-        print(day2.getChecksum())
-        print(day2.checkMatchingID())
-        
-        print("\n\n\nDay 3")
-        let day3 = Day3Manager()
-        print(day3.compareCuts())
-        print(day3.intactID())
+//        print("\n\n\nDay 1")
+//        let day1 = Day01Manager()
+//        print(day1.getPosition())
+//        print(day1.checkFirstDuplicateFrequency())
+//
+//        print("\n\n\nDay 2")
+//        let day2 = Day02Manager()
+//        print(day2.getChecksum())
+//        print(day2.checkMatchingID())
+//
+//        print("\n\n\nDay 3")
+//        let day3 = Day03Manager()
+//        print(day3.compareCuts())
+//        print(day3.intactID())
     }
 }

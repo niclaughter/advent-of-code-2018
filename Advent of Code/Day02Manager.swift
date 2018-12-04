@@ -1,5 +1,5 @@
 //
-//  Day2Manager.swift
+//  Day02Manager.swift
 //  Advent of Code
 //
 //  Created by Nic Laughter on 12/3/18.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Day2Manager {
+struct Day02Manager {
     let boxCodes = """
 xdmgyjkpruszabaqwficevtjeo
 xdmgybkgwuszlbaqwfichvtneo
