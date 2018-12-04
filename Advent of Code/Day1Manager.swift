@@ -10,7 +10,7 @@ import Foundation
 
 struct Day1Manager {
     
-    let input = """
+    private let input = """
 +12
 -13
 +17
@@ -1024,21 +1024,22 @@ struct Day1Manager {
 +73808
 """
     
-    var allInts: [Int] {
-        return self.input.components(separatedBy: "\n").compactMap { Int(String($0)) }
+    private func getInts(from string: String) -> [Int] {
+        return string.components(separatedBy: "\n").compactMap { Int(String($0)) }
     }
     
-    func getPosition() -> Int {
-        return self.allInts.reduce(0, +)
+    func getPosition(in frequenciesString: String? = nil) -> Int {
+        let positions = self.getInts(from: frequenciesString ?? self.input)
+        return positions.reduce(0, +)
     }
     
-    func checkFirstDuplicateFrequency() -> Int {
+    func checkFirstDuplicateFrequency(in frequenciesString: String? = nil) -> Int {
         var currentFrequency = 0
         var frequencies: Set<Int> = [0]
         var hasFoundDuplicate = false
-        
+        let positions = self.getInts(from: frequenciesString ?? self.input)
         while !hasFoundDuplicate {
-            self.allInts.forEach {
+            positions.forEach {
                 guard !hasFoundDuplicate else { return }
                 currentFrequency += $0
                 guard frequencies.contains(currentFrequency) else { frequencies.insert(currentFrequency); return }
