@@ -36,5 +36,9 @@ class ViewController: UIViewController {
 //        let day4 = Day04Manager()
 //        print(day4.computeGuardMostSlept())
 //        print(day4.computeMinuteMostSlept())
+        
+        print("Day 5")
+        let day5 = Day05Manager()
+        print(day5.getInactivatedPolymersCount())
     }
 }

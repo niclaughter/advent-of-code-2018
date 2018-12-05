@@ -12,6 +12,8 @@ import XCTest
 class Day05Tests: XCTestCase {
     
     func test05() {
+        let input = "dabAcCaCBAcCcaDA"
         let manager = Day05Manager()
+        XCTAssertEqual(10, manager.getInactivatedPolymersCount(with: input))
     }
 }
