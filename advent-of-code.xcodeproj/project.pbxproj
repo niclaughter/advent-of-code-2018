@@ -20,6 +20,8 @@
 		FDE40EDD21B736F900F70A48 /* Day04Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE40ED921B736F800F70A48 /* Day04Manager.swift */; };
 		FDE40EDE21B736F900F70A48 /* Day01Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE40EDA21B736F900F70A48 /* Day01Manager.swift */; };
 		FDE40EE021B7371E00F70A48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE40EDF21B7371E00F70A48 /* ViewController.swift */; };
+		FDE40EE321B762A100F70A48 /* Day05Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE40EE221B762A100F70A48 /* Day05Manager.swift */; };
+		FDE40EE521B762BF00F70A48 /* Day05Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE40EE421B762BF00F70A48 /* Day05Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		FDE40ED921B736F800F70A48 /* Day04Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day04Manager.swift; sourceTree = "<group>"; };
 		FDE40EDA21B736F900F70A48 /* Day01Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day01Manager.swift; sourceTree = "<group>"; };
 		FDE40EDF21B7371E00F70A48 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FDE40EE221B762A100F70A48 /* Day05Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day05Manager.swift; sourceTree = "<group>"; };
+		FDE40EE421B762BF00F70A48 /* Day05Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day05Tests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,7 @@
 				FDE40ECE21B736AA00F70A48 /* Day02Tests.swift */,
 				FDE40ED121B736AA00F70A48 /* Day03Tests.swift */,
 				FDE40ECF21B736AA00F70A48 /* Day04Tests.swift */,
+				FDE40EE421B762BF00F70A48 /* Day05Tests.swift */,
 				FDE40EC421B7365000F70A48 /* Info.plist */,
 				FDE40ECD21B736AA00F70A48 /* advent-of-codeTests-Bridging-Header.h */,
 			);
@@ -121,6 +126,7 @@
 				FDE40ED721B736F800F70A48 /* Day02Manager.swift */,
 				FDE40ED821B736F800F70A48 /* Day03Manager.swift */,
 				FDE40ED921B736F800F70A48 /* Day04Manager.swift */,
+				FDE40EE221B762A100F70A48 /* Day05Manager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -242,6 +248,7 @@
 				FDE40EDC21B736F900F70A48 /* Day03Manager.swift in Sources */,
 				FDE40EDB21B736F900F70A48 /* Day02Manager.swift in Sources */,
 				FDE40EAE21B7365000F70A48 /* AppDelegate.swift in Sources */,
+				FDE40EE321B762A100F70A48 /* Day05Manager.swift in Sources */,
 				FDE40EDE21B736F900F70A48 /* Day01Manager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,6 +260,7 @@
 				FDE40ED321B736AA00F70A48 /* Day04Tests.swift in Sources */,
 				FDE40ED221B736AA00F70A48 /* Day02Tests.swift in Sources */,
 				FDE40ED421B736AA00F70A48 /* Day01Tests.swift in Sources */,
+				FDE40EE521B762BF00F70A48 /* Day05Tests.swift in Sources */,
 				FDE40ED521B736AA00F70A48 /* Day03Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
