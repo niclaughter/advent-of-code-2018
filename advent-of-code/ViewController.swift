@@ -32,9 +32,9 @@ class ViewController: UIViewController {
 //        print(day3.compareCuts())
 //        print(day3.intactID())
         
-        print("\n\n\nDay 4")
-        let day4 = Day04Manager()
-        print(day4.computeGuardMostSlept())
-        print(day4.computeMinuteMostSlept())
+//        print("\n\n\nDay 4")
+//        let day4 = Day04Manager()
+//        print(day4.computeGuardMostSlept())
+//        print(day4.computeMinuteMostSlept())
     }
 }
