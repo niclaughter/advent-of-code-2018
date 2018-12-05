@@ -1132,8 +1132,6 @@ struct Day04Manager {
             var description = descriptionWithSpace
             description.remove(at: description.index(descriptionWithSpace.startIndex,
                                                      offsetBy: 0))
-            print(dateString)
-            print(date)
             self.date = date
             self.description = description
         }
@@ -1146,15 +1144,41 @@ struct Day04Manager {
     }
     
     private func computeSleepiestGuard(from entries: [Entry]) -> Int {
-        
-        
-        return 0
+        var sleepDict: [Int: Int] = [:]
+        var currentGuard = 0
+        var sleepingMinute = 0
+        var wakingMinute = 0
+        for entry in entries {
+            if let id = entry.guardID {
+                currentGuard = id
+                print("switching to guard \(id)")
+            }
+            if entry.description == "falls asleep" {
+                sleepingMinute = entry.minute
+                print("Asleep at \(entry.minute)")
+            } else if entry.description == "wakes up" {
+                wakingMinute = entry.minute
+                print("Awake at \(entry.minute)")
+                sleepDict[currentGuard] = (sleepDict[currentGuard] ?? 0) + wakingMinute - sleepingMinute
+            }
+        }
+        var maxSleepTime = 0
+        var sleepiestGuard = 0
+        for guardID in sleepDict.keys {
+            if let sleepTime = sleepDict[guardID], maxSleepTime < sleepTime {
+                maxSleepTime = sleepTime
+                sleepiestGuard = guardID
+            }
+        }
+        return sleepiestGuard
     }
     
     func computeGuardAndMinute(from input: String? = nil) -> Int {
-        for entry in getSortedEntries(from: input ?? self.input) {
+        let entries = getSortedEntries(from: input ?? self.input)
+        for entry in entries {
             print("\(entry.date): \(entry.description)")
         }
+        let sleepiestGuard = self.computeSleepiestGuard(from: entries)
         return 0
     }
 }
