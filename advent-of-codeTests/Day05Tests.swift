@@ -15,5 +15,6 @@ class Day05Tests: XCTestCase {
         let input = "dabAcCaCBAcCcaDA"
         let manager = Day05Manager()
         XCTAssertEqual(10, manager.getInactivatedPolymersCount(with: input))
+        XCTAssertEqual(4, manager.removeProblematicUnitType(with: input))
     }
 }

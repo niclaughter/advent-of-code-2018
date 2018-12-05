@@ -27,4 +27,19 @@ struct Day05Manager {
         } while activating
         return trimmed.count
     }
+    
+    func removeProblematicUnitType(with input: String? = nil) -> Int {
+        let full = input ?? self.input
+        var bestReduction = full.count
+        for letter in "abcdefghijklmnopqrstuvwxyz" {
+            let inputWithoutLetter = full
+                .replacingOccurrences(of: String(letter), with: "")
+                .replacingOccurrences(of: String(letter).uppercased(), with: "")
+            let count = self.getInactivatedPolymersCount(with: inputWithoutLetter)
+            if count < bestReduction {
+                bestReduction = count
+            }
+        }
+        return bestReduction
+    }
 }

@@ -39,6 +39,7 @@ class ViewController: UIViewController {
         
         print("Day 5")
         let day5 = Day05Manager()
-        print(day5.getInactivatedPolymersCount())
+//        print(day5.getInactivatedPolymersCount())
+        print(day5.removeProblematicUnitType())
     }
 }
