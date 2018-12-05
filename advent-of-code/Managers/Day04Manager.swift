@@ -1143,22 +1143,17 @@ struct Day04Manager {
         return entries
     }
     
-    private func computeSleepiestGuard(from entries: [Entry]) -> Int {
+    private func computeSleepiestGuardAndMinuteMostSlept(from entries: [Entry]) -> (guardID: Int, minuteMostSlept: Int) {
         var sleepDict: [Int: Int] = [:]
         var currentGuard = 0
         var sleepingMinute = 0
         var wakingMinute = 0
         for entry in entries {
-            if let id = entry.guardID {
-                currentGuard = id
-                print("switching to guard \(id)")
-            }
+            if let id = entry.guardID { currentGuard = id }
             if entry.description == "falls asleep" {
                 sleepingMinute = entry.minute
-                print("Asleep at \(entry.minute)")
             } else if entry.description == "wakes up" {
                 wakingMinute = entry.minute
-                print("Awake at \(entry.minute)")
                 sleepDict[currentGuard] = (sleepDict[currentGuard] ?? 0) + wakingMinute - sleepingMinute
             }
         }
@@ -1170,7 +1165,33 @@ struct Day04Manager {
                 sleepiestGuard = guardID
             }
         }
-        return sleepiestGuard
+        var minutesSleptDict: [Int: Int] = [:]
+        var minuteMostSlept = 0
+        var mostSleptMinutes = 0
+        for entry in entries {
+            print(entry)
+            if let id = entry.guardID { currentGuard = id }
+            if currentGuard == sleepiestGuard {
+                if entry.description == "falls asleep" {
+                    sleepingMinute = entry.minute
+                    print("fell asleep at \(entry.minute)")
+                } else if entry.description == "wakes up" {
+                    wakingMinute = entry.minute
+                    print("woke up at \(entry.minute)")
+                    for minute in sleepingMinute..<wakingMinute {
+                        print("Setting \((minutesSleptDict[minute] ?? 0) + 1) to \(minute)")
+                        minutesSleptDict[minute] = (minutesSleptDict[minute] ?? 0) + 1
+                    }
+                }
+            }
+        }
+        for key in minutesSleptDict.keys {
+            if let minutesSlept = minutesSleptDict[key], minutesSlept > mostSleptMinutes {
+                minuteMostSlept = key
+                mostSleptMinutes = minutesSlept
+            }
+        }
+        return (sleepiestGuard, minuteMostSlept)
     }
     
     func computeGuardAndMinute(from input: String? = nil) -> Int {
@@ -1178,7 +1199,7 @@ struct Day04Manager {
         for entry in entries {
             print("\(entry.date): \(entry.description)")
         }
-        let sleepiestGuard = self.computeSleepiestGuard(from: entries)
-        return 0
+        let (sleepiestGuard, minuteMostSlept) = self.computeSleepiestGuardAndMinuteMostSlept(from: entries)
+        return sleepiestGuard * minuteMostSlept
     }
 }
