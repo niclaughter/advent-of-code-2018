@@ -34,6 +34,7 @@ class ViewController: UIViewController {
         
         print("\n\n\nDay 4")
         let day4 = Day04Manager()
-        print(day4.computeGuardAndMinute())
+        print(day4.computeGuardMostSlept())
+        print(day4.computeMinuteMostSlept())
     }
 }

@@ -1143,7 +1143,7 @@ struct Day04Manager {
         return entries
     }
     
-    private func computeSleepiestGuardAndMinuteMostSlept(from entries: [Entry]) -> (guardID: Int, minuteMostSlept: Int) {
+    private func computeSleepiestGuardAndMinuteMostSlept(from entries: [Entry]) -> Int {
         var sleepDict: [Int: Int] = [:]
         var currentGuard = 0
         var sleepingMinute = 0
@@ -1169,37 +1169,69 @@ struct Day04Manager {
         var minuteMostSlept = 0
         var mostSleptMinutes = 0
         for entry in entries {
-            print(entry)
             if let id = entry.guardID { currentGuard = id }
             if currentGuard == sleepiestGuard {
                 if entry.description == "falls asleep" {
                     sleepingMinute = entry.minute
-                    print("fell asleep at \(entry.minute)")
                 } else if entry.description == "wakes up" {
                     wakingMinute = entry.minute
-                    print("woke up at \(entry.minute)")
                     for minute in sleepingMinute..<wakingMinute {
-                        print("Setting \((minutesSleptDict[minute] ?? 0) + 1) to \(minute)")
                         minutesSleptDict[minute] = (minutesSleptDict[minute] ?? 0) + 1
                     }
                 }
             }
         }
-        for key in minutesSleptDict.keys {
-            if let minutesSlept = minutesSleptDict[key], minutesSlept > mostSleptMinutes {
-                minuteMostSlept = key
+        for minute in minutesSleptDict.keys {
+            if let minutesSlept = minutesSleptDict[minute], minutesSlept > mostSleptMinutes {
+                minuteMostSlept = minute
                 mostSleptMinutes = minutesSlept
             }
         }
-        return (sleepiestGuard, minuteMostSlept)
+        return sleepiestGuard * minuteMostSlept
     }
     
-    func computeGuardAndMinute(from input: String? = nil) -> Int {
-        let entries = getSortedEntries(from: input ?? self.input)
+    private func computeMinuteMostSleptByGuard(from entries: [Entry]) -> Int {
+        var guardWithMinutesSleptDict: [Int: [Int: Int]] = [:]
+        var currentGuard = 0
+        var sleepingMinute = 0
+        var wakingMinute = 0
         for entry in entries {
-            print("\(entry.date): \(entry.description)")
+            if let id = entry.guardID { currentGuard = id }
+            var minutesSleptDict = guardWithMinutesSleptDict[currentGuard] ?? [:]
+            if entry.description == "falls asleep" {
+                sleepingMinute = entry.minute
+            } else if entry.description == "wakes up" {
+                wakingMinute = entry.minute
+                for minute in sleepingMinute..<wakingMinute {
+                    minutesSleptDict[minute] = (minutesSleptDict[minute] ?? 0) + 1
+                }
+                guardWithMinutesSleptDict[currentGuard] = minutesSleptDict
+            }
         }
-        let (sleepiestGuard, minuteMostSlept) = self.computeSleepiestGuardAndMinuteMostSlept(from: entries)
-        return sleepiestGuard * minuteMostSlept
+        var mostSleptGuard = 0
+        var minuteMostSlept = 0
+        var mostSleptMinutes = 0
+        for eachGuard in guardWithMinutesSleptDict.keys {
+            currentGuard = eachGuard
+            guard let guardDict = guardWithMinutesSleptDict[eachGuard] else { return 0 }
+            for minute in guardDict.keys {
+                if let minutesSlept = guardDict[minute], minutesSlept > mostSleptMinutes {
+                    minuteMostSlept = minute
+                    mostSleptMinutes = minutesSlept
+                    mostSleptGuard = currentGuard
+                }
+            }
+        }
+        return mostSleptGuard * minuteMostSlept
+    }
+    
+    func computeGuardMostSlept(from input: String? = nil) -> Int {
+        let entries = getSortedEntries(from: input ?? self.input)
+        return self.computeSleepiestGuardAndMinuteMostSlept(from: entries)
+    }
+    
+    func computeMinuteMostSlept(from input: String? = nil) -> Int {
+        let entries = getSortedEntries(from: input ?? self.input)
+        return self.computeMinuteMostSleptByGuard(from: entries)
     }
 }

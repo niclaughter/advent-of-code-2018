@@ -31,6 +31,7 @@ class Day04Tests: XCTestCase {
 [1518-11-05 00:45] falls asleep
 [1518-11-05 00:55] wakes up
 """
-        XCTAssertEqual(240, Day04Manager().computeGuardAndMinute(from: input))
+        XCTAssertEqual(240, Day04Manager().computeGuardMostSlept(from: input))
+        XCTAssertEqual(4455, Day04Manager().computeMinuteMostSlept(from: input))
     }
 }
