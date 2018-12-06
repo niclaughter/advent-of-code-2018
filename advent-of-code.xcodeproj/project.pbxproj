@@ -7,65 +7,64 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FDE40EAE21B7365000F70A48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE40EAD21B7365000F70A48 /* AppDelegate.swift */; };
-		FDE40EB321B7365000F70A48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDE40EB121B7365000F70A48 /* Main.storyboard */; };
-		FDE40EB521B7365000F70A48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDE40EB421B7365000F70A48 /* Assets.xcassets */; };
-		FDE40EB821B7365000F70A48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDE40EB621B7365000F70A48 /* LaunchScreen.storyboard */; };
-		FDE40ED221B736AA00F70A48 /* Day02Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE40ECE21B736AA00F70A48 /* Day02Tests.swift */; };
-		FDE40ED321B736AA00F70A48 /* Day04Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE40ECF21B736AA00F70A48 /* Day04Tests.swift */; };
-		FDE40ED421B736AA00F70A48 /* Day01Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE40ED021B736AA00F70A48 /* Day01Tests.swift */; };
-		FDE40ED521B736AA00F70A48 /* Day03Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE40ED121B736AA00F70A48 /* Day03Tests.swift */; };
-		FDE40EDB21B736F900F70A48 /* Day02Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE40ED721B736F800F70A48 /* Day02Manager.swift */; };
-		FDE40EDC21B736F900F70A48 /* Day03Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE40ED821B736F800F70A48 /* Day03Manager.swift */; };
-		FDE40EDD21B736F900F70A48 /* Day04Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE40ED921B736F800F70A48 /* Day04Manager.swift */; };
-		FDE40EDE21B736F900F70A48 /* Day01Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE40EDA21B736F900F70A48 /* Day01Manager.swift */; };
-		FDE40EE021B7371E00F70A48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE40EDF21B7371E00F70A48 /* ViewController.swift */; };
-		FDE40EE321B762A100F70A48 /* Day05Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE40EE221B762A100F70A48 /* Day05Manager.swift */; };
-		FDE40EE521B762BF00F70A48 /* Day05Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE40EE421B762BF00F70A48 /* Day05Tests.swift */; };
+		FD102CC121B89F2700F3D7B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD102CC021B89F2700F3D7B7 /* AppDelegate.swift */; };
+		FD102CC321B89F2700F3D7B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD102CC221B89F2700F3D7B7 /* ViewController.swift */; };
+		FD102CC521B89F2800F3D7B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD102CC421B89F2800F3D7B7 /* Assets.xcassets */; };
+		FD102CC821B89F2900F3D7B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD102CC621B89F2900F3D7B7 /* Main.storyboard */; };
+		FD102CE821B89F9A00F3D7B7 /* Day05Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD102CE321B89F9A00F3D7B7 /* Day05Tests.swift */; };
+		FD102CE921B89F9A00F3D7B7 /* Day01Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD102CE421B89F9A00F3D7B7 /* Day01Tests.swift */; };
+		FD102CEA21B89F9A00F3D7B7 /* Day04Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD102CE521B89F9A00F3D7B7 /* Day04Tests.swift */; };
+		FD102CEB21B89F9A00F3D7B7 /* Day02Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD102CE621B89F9A00F3D7B7 /* Day02Tests.swift */; };
+		FD102CEC21B89F9A00F3D7B7 /* Day03Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD102CE721B89F9A00F3D7B7 /* Day03Tests.swift */; };
+		FD102CF221B8A03700F3D7B7 /* Day05Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD102CED21B8A03600F3D7B7 /* Day05Manager.swift */; };
+		FD102CF321B8A03700F3D7B7 /* Day03Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD102CEE21B8A03600F3D7B7 /* Day03Manager.swift */; };
+		FD102CF421B8A03700F3D7B7 /* Day01Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD102CEF21B8A03600F3D7B7 /* Day01Manager.swift */; };
+		FD102CF521B8A03700F3D7B7 /* Day04Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD102CF021B8A03600F3D7B7 /* Day04Manager.swift */; };
+		FD102CF621B8A03700F3D7B7 /* Day02Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD102CF121B8A03600F3D7B7 /* Day02Manager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		FDE40EBF21B7365000F70A48 /* PBXContainerItemProxy */ = {
+		FD102CD021B89F2900F3D7B7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FDE40EA221B7365000F70A48 /* Project object */;
+			containerPortal = FD102CB521B89F2700F3D7B7 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FDE40EA921B7365000F70A48;
+			remoteGlobalIDString = FD102CBC21B89F2700F3D7B7;
 			remoteInfo = "advent-of-code";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FDE40EAA21B7365000F70A48 /* advent-of-code.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "advent-of-code.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FDE40EAD21B7365000F70A48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FDE40EB221B7365000F70A48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FDE40EB421B7365000F70A48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FDE40EB721B7365000F70A48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		FDE40EB921B7365000F70A48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FDE40EBE21B7365000F70A48 /* advent-of-codeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "advent-of-codeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FDE40EC421B7365000F70A48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FDE40ECD21B736AA00F70A48 /* advent-of-codeTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "advent-of-codeTests-Bridging-Header.h"; sourceTree = "<group>"; };
-		FDE40ECE21B736AA00F70A48 /* Day02Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day02Tests.swift; sourceTree = "<group>"; };
-		FDE40ECF21B736AA00F70A48 /* Day04Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day04Tests.swift; sourceTree = "<group>"; };
-		FDE40ED021B736AA00F70A48 /* Day01Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day01Tests.swift; sourceTree = "<group>"; };
-		FDE40ED121B736AA00F70A48 /* Day03Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day03Tests.swift; sourceTree = "<group>"; };
-		FDE40ED721B736F800F70A48 /* Day02Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day02Manager.swift; sourceTree = "<group>"; };
-		FDE40ED821B736F800F70A48 /* Day03Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day03Manager.swift; sourceTree = "<group>"; };
-		FDE40ED921B736F800F70A48 /* Day04Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day04Manager.swift; sourceTree = "<group>"; };
-		FDE40EDA21B736F900F70A48 /* Day01Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day01Manager.swift; sourceTree = "<group>"; };
-		FDE40EDF21B7371E00F70A48 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FDE40EE221B762A100F70A48 /* Day05Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day05Manager.swift; sourceTree = "<group>"; };
-		FDE40EE421B762BF00F70A48 /* Day05Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day05Tests.swift; sourceTree = "<group>"; };
+		FD102CBD21B89F2700F3D7B7 /* advent-of-code.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "advent-of-code.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD102CC021B89F2700F3D7B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FD102CC221B89F2700F3D7B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FD102CC421B89F2800F3D7B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD102CC721B89F2900F3D7B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FD102CC921B89F2900F3D7B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD102CCA21B89F2900F3D7B7 /* advent_of_code.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = advent_of_code.entitlements; sourceTree = "<group>"; };
+		FD102CCF21B89F2900F3D7B7 /* advent-of-codeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "advent-of-codeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD102CD521B89F2900F3D7B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD102CE021B89F8700F3D7B7 /* advent-of-codeTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "advent-of-codeTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		FD102CE321B89F9A00F3D7B7 /* Day05Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day05Tests.swift; sourceTree = "<group>"; };
+		FD102CE421B89F9A00F3D7B7 /* Day01Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day01Tests.swift; sourceTree = "<group>"; };
+		FD102CE521B89F9A00F3D7B7 /* Day04Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day04Tests.swift; sourceTree = "<group>"; };
+		FD102CE621B89F9A00F3D7B7 /* Day02Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day02Tests.swift; sourceTree = "<group>"; };
+		FD102CE721B89F9A00F3D7B7 /* Day03Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day03Tests.swift; sourceTree = "<group>"; };
+		FD102CED21B8A03600F3D7B7 /* Day05Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day05Manager.swift; sourceTree = "<group>"; };
+		FD102CEE21B8A03600F3D7B7 /* Day03Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day03Manager.swift; sourceTree = "<group>"; };
+		FD102CEF21B8A03600F3D7B7 /* Day01Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day01Manager.swift; sourceTree = "<group>"; };
+		FD102CF021B8A03600F3D7B7 /* Day04Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day04Manager.swift; sourceTree = "<group>"; };
+		FD102CF121B8A03600F3D7B7 /* Day02Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day02Manager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FDE40EA721B7365000F70A48 /* Frameworks */ = {
+		FD102CBA21B89F2700F3D7B7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FDE40EBB21B7365000F70A48 /* Frameworks */ = {
+		FD102CCC21B89F2900F3D7B7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -75,82 +74,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FDE40EA121B7365000F70A48 = {
+		FD102CB421B89F2700F3D7B7 = {
 			isa = PBXGroup;
 			children = (
-				FDE40EAC21B7365000F70A48 /* advent-of-code */,
-				FDE40EC121B7365000F70A48 /* advent-of-codeTests */,
-				FDE40EAB21B7365000F70A48 /* Products */,
+				FD102CBF21B89F2700F3D7B7 /* advent-of-code */,
+				FD102CD221B89F2900F3D7B7 /* advent-of-codeTests */,
+				FD102CBE21B89F2700F3D7B7 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		FDE40EAB21B7365000F70A48 /* Products */ = {
+		FD102CBE21B89F2700F3D7B7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FDE40EAA21B7365000F70A48 /* advent-of-code.app */,
-				FDE40EBE21B7365000F70A48 /* advent-of-codeTests.xctest */,
+				FD102CBD21B89F2700F3D7B7 /* advent-of-code.app */,
+				FD102CCF21B89F2900F3D7B7 /* advent-of-codeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FDE40EAC21B7365000F70A48 /* advent-of-code */ = {
+		FD102CBF21B89F2700F3D7B7 /* advent-of-code */ = {
 			isa = PBXGroup;
 			children = (
-				FDE40EAD21B7365000F70A48 /* AppDelegate.swift */,
-				FDE40ED621B736E500F70A48 /* Managers */,
-				FDE40EDF21B7371E00F70A48 /* ViewController.swift */,
-				FDE40EB121B7365000F70A48 /* Main.storyboard */,
-				FDE40EE121B737A400F70A48 /* Resources */,
+				FD102CC021B89F2700F3D7B7 /* AppDelegate.swift */,
+				FD102CEF21B8A03600F3D7B7 /* Day01Manager.swift */,
+				FD102CF121B8A03600F3D7B7 /* Day02Manager.swift */,
+				FD102CEE21B8A03600F3D7B7 /* Day03Manager.swift */,
+				FD102CF021B8A03600F3D7B7 /* Day04Manager.swift */,
+				FD102CED21B8A03600F3D7B7 /* Day05Manager.swift */,
+				FD102CC221B89F2700F3D7B7 /* ViewController.swift */,
+				FD102CC421B89F2800F3D7B7 /* Assets.xcassets */,
+				FD102CC621B89F2900F3D7B7 /* Main.storyboard */,
+				FD102CC921B89F2900F3D7B7 /* Info.plist */,
+				FD102CCA21B89F2900F3D7B7 /* advent_of_code.entitlements */,
 			);
 			path = "advent-of-code";
 			sourceTree = "<group>";
 		};
-		FDE40EC121B7365000F70A48 /* advent-of-codeTests */ = {
+		FD102CD221B89F2900F3D7B7 /* advent-of-codeTests */ = {
 			isa = PBXGroup;
 			children = (
-				FDE40ED021B736AA00F70A48 /* Day01Tests.swift */,
-				FDE40ECE21B736AA00F70A48 /* Day02Tests.swift */,
-				FDE40ED121B736AA00F70A48 /* Day03Tests.swift */,
-				FDE40ECF21B736AA00F70A48 /* Day04Tests.swift */,
-				FDE40EE421B762BF00F70A48 /* Day05Tests.swift */,
-				FDE40EC421B7365000F70A48 /* Info.plist */,
-				FDE40ECD21B736AA00F70A48 /* advent-of-codeTests-Bridging-Header.h */,
+				FD102CD521B89F2900F3D7B7 /* Info.plist */,
+				FD102CE421B89F9A00F3D7B7 /* Day01Tests.swift */,
+				FD102CE621B89F9A00F3D7B7 /* Day02Tests.swift */,
+				FD102CE721B89F9A00F3D7B7 /* Day03Tests.swift */,
+				FD102CE521B89F9A00F3D7B7 /* Day04Tests.swift */,
+				FD102CE321B89F9A00F3D7B7 /* Day05Tests.swift */,
+				FD102CE021B89F8700F3D7B7 /* advent-of-codeTests-Bridging-Header.h */,
 			);
 			path = "advent-of-codeTests";
-			sourceTree = "<group>";
-		};
-		FDE40ED621B736E500F70A48 /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-				FDE40EDA21B736F900F70A48 /* Day01Manager.swift */,
-				FDE40ED721B736F800F70A48 /* Day02Manager.swift */,
-				FDE40ED821B736F800F70A48 /* Day03Manager.swift */,
-				FDE40ED921B736F800F70A48 /* Day04Manager.swift */,
-				FDE40EE221B762A100F70A48 /* Day05Manager.swift */,
-			);
-			path = Managers;
-			sourceTree = "<group>";
-		};
-		FDE40EE121B737A400F70A48 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				FDE40EB421B7365000F70A48 /* Assets.xcassets */,
-				FDE40EB621B7365000F70A48 /* LaunchScreen.storyboard */,
-				FDE40EB921B7365000F70A48 /* Info.plist */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FDE40EA921B7365000F70A48 /* advent-of-code */ = {
+		FD102CBC21B89F2700F3D7B7 /* advent-of-code */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FDE40EC721B7365000F70A48 /* Build configuration list for PBXNativeTarget "advent-of-code" */;
+			buildConfigurationList = FD102CD821B89F2900F3D7B7 /* Build configuration list for PBXNativeTarget "advent-of-code" */;
 			buildPhases = (
-				FDE40EA621B7365000F70A48 /* Sources */,
-				FDE40EA721B7365000F70A48 /* Frameworks */,
-				FDE40EA821B7365000F70A48 /* Resources */,
+				FD102CB921B89F2700F3D7B7 /* Sources */,
+				FD102CBA21B89F2700F3D7B7 /* Frameworks */,
+				FD102CBB21B89F2700F3D7B7 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -158,48 +141,48 @@
 			);
 			name = "advent-of-code";
 			productName = "advent-of-code";
-			productReference = FDE40EAA21B7365000F70A48 /* advent-of-code.app */;
+			productReference = FD102CBD21B89F2700F3D7B7 /* advent-of-code.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FDE40EBD21B7365000F70A48 /* advent-of-codeTests */ = {
+		FD102CCE21B89F2900F3D7B7 /* advent-of-codeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FDE40ECA21B7365000F70A48 /* Build configuration list for PBXNativeTarget "advent-of-codeTests" */;
+			buildConfigurationList = FD102CDB21B89F2900F3D7B7 /* Build configuration list for PBXNativeTarget "advent-of-codeTests" */;
 			buildPhases = (
-				FDE40EBA21B7365000F70A48 /* Sources */,
-				FDE40EBB21B7365000F70A48 /* Frameworks */,
-				FDE40EBC21B7365000F70A48 /* Resources */,
+				FD102CCB21B89F2900F3D7B7 /* Sources */,
+				FD102CCC21B89F2900F3D7B7 /* Frameworks */,
+				FD102CCD21B89F2900F3D7B7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FDE40EC021B7365000F70A48 /* PBXTargetDependency */,
+				FD102CD121B89F2900F3D7B7 /* PBXTargetDependency */,
 			);
 			name = "advent-of-codeTests";
 			productName = "advent-of-codeTests";
-			productReference = FDE40EBE21B7365000F70A48 /* advent-of-codeTests.xctest */;
+			productReference = FD102CCF21B89F2900F3D7B7 /* advent-of-codeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		FDE40EA221B7365000F70A48 /* Project object */ = {
+		FD102CB521B89F2700F3D7B7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Gaire Tech, LLC.";
 				TargetAttributes = {
-					FDE40EA921B7365000F70A48 = {
+					FD102CBC21B89F2700F3D7B7 = {
 						CreatedOnToolsVersion = 10.1;
 					};
-					FDE40EBD21B7365000F70A48 = {
+					FD102CCE21B89F2900F3D7B7 = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1010;
-						TestTargetID = FDE40EA921B7365000F70A48;
+						TestTargetID = FD102CBC21B89F2700F3D7B7;
 					};
 				};
 			};
-			buildConfigurationList = FDE40EA521B7365000F70A48 /* Build configuration list for PBXProject "advent-of-code" */;
+			buildConfigurationList = FD102CB821B89F2700F3D7B7 /* Build configuration list for PBXProject "advent-of-code" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -207,29 +190,28 @@
 				en,
 				Base,
 			);
-			mainGroup = FDE40EA121B7365000F70A48;
-			productRefGroup = FDE40EAB21B7365000F70A48 /* Products */;
+			mainGroup = FD102CB421B89F2700F3D7B7;
+			productRefGroup = FD102CBE21B89F2700F3D7B7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FDE40EA921B7365000F70A48 /* advent-of-code */,
-				FDE40EBD21B7365000F70A48 /* advent-of-codeTests */,
+				FD102CBC21B89F2700F3D7B7 /* advent-of-code */,
+				FD102CCE21B89F2900F3D7B7 /* advent-of-codeTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		FDE40EA821B7365000F70A48 /* Resources */ = {
+		FD102CBB21B89F2700F3D7B7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDE40EB821B7365000F70A48 /* LaunchScreen.storyboard in Resources */,
-				FDE40EB521B7365000F70A48 /* Assets.xcassets in Resources */,
-				FDE40EB321B7365000F70A48 /* Main.storyboard in Resources */,
+				FD102CC521B89F2800F3D7B7 /* Assets.xcassets in Resources */,
+				FD102CC821B89F2900F3D7B7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FDE40EBC21B7365000F70A48 /* Resources */ = {
+		FD102CCD21B89F2900F3D7B7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -239,63 +221,55 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		FDE40EA621B7365000F70A48 /* Sources */ = {
+		FD102CB921B89F2700F3D7B7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDE40EE021B7371E00F70A48 /* ViewController.swift in Sources */,
-				FDE40EDD21B736F900F70A48 /* Day04Manager.swift in Sources */,
-				FDE40EDC21B736F900F70A48 /* Day03Manager.swift in Sources */,
-				FDE40EDB21B736F900F70A48 /* Day02Manager.swift in Sources */,
-				FDE40EAE21B7365000F70A48 /* AppDelegate.swift in Sources */,
-				FDE40EE321B762A100F70A48 /* Day05Manager.swift in Sources */,
-				FDE40EDE21B736F900F70A48 /* Day01Manager.swift in Sources */,
+				FD102CC321B89F2700F3D7B7 /* ViewController.swift in Sources */,
+				FD102CF321B8A03700F3D7B7 /* Day03Manager.swift in Sources */,
+				FD102CF521B8A03700F3D7B7 /* Day04Manager.swift in Sources */,
+				FD102CF621B8A03700F3D7B7 /* Day02Manager.swift in Sources */,
+				FD102CF221B8A03700F3D7B7 /* Day05Manager.swift in Sources */,
+				FD102CF421B8A03700F3D7B7 /* Day01Manager.swift in Sources */,
+				FD102CC121B89F2700F3D7B7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FDE40EBA21B7365000F70A48 /* Sources */ = {
+		FD102CCB21B89F2900F3D7B7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDE40ED321B736AA00F70A48 /* Day04Tests.swift in Sources */,
-				FDE40ED221B736AA00F70A48 /* Day02Tests.swift in Sources */,
-				FDE40ED421B736AA00F70A48 /* Day01Tests.swift in Sources */,
-				FDE40EE521B762BF00F70A48 /* Day05Tests.swift in Sources */,
-				FDE40ED521B736AA00F70A48 /* Day03Tests.swift in Sources */,
+				FD102CE821B89F9A00F3D7B7 /* Day05Tests.swift in Sources */,
+				FD102CE921B89F9A00F3D7B7 /* Day01Tests.swift in Sources */,
+				FD102CEC21B89F9A00F3D7B7 /* Day03Tests.swift in Sources */,
+				FD102CEB21B89F9A00F3D7B7 /* Day02Tests.swift in Sources */,
+				FD102CEA21B89F9A00F3D7B7 /* Day04Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		FDE40EC021B7365000F70A48 /* PBXTargetDependency */ = {
+		FD102CD121B89F2900F3D7B7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FDE40EA921B7365000F70A48 /* advent-of-code */;
-			targetProxy = FDE40EBF21B7365000F70A48 /* PBXContainerItemProxy */;
+			target = FD102CBC21B89F2700F3D7B7 /* advent-of-code */;
+			targetProxy = FD102CD021B89F2900F3D7B7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FDE40EB121B7365000F70A48 /* Main.storyboard */ = {
+		FD102CC621B89F2900F3D7B7 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FDE40EB221B7365000F70A48 /* Base */,
+				FD102CC721B89F2900F3D7B7 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		FDE40EB621B7365000F70A48 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FDE40EB721B7365000F70A48 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		FDE40EC521B7365000F70A48 /* Debug */ = {
+		FD102CD621B89F2900F3D7B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -327,7 +301,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -346,17 +320,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		FDE40EC621B7365000F70A48 /* Release */ = {
+		FD102CD721B89F2900F3D7B7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -388,7 +362,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -401,130 +375,131 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		FDE40EC821B7365000F70A48 /* Debug */ = {
+		FD102CD921B89F2900F3D7B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "advent-of-code/advent_of_code.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = B24U63J96U;
-				INFOPLIST_FILE = "$(SRCROOT)/advent-of-code/Resources/Info.plist";
+				INFOPLIST_FILE = "advent-of-code/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/Frameworks",
+					"@executable_path/../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "tech.gaire.advent-of-code";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		FDE40EC921B7365000F70A48 /* Release */ = {
+		FD102CDA21B89F2900F3D7B7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "advent-of-code/advent_of_code.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = B24U63J96U;
-				INFOPLIST_FILE = "$(SRCROOT)/advent-of-code/Resources/Info.plist";
+				INFOPLIST_FILE = "advent-of-code/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/Frameworks",
+					"@executable_path/../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "tech.gaire.advent-of-code";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		FDE40ECB21B7365000F70A48 /* Debug */ = {
+		FD102CDC21B89F2900F3D7B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = B24U63J96U;
 				INFOPLIST_FILE = "advent-of-codeTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "tech.gaire.advent-of-codeTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "advent-of-codeTests/advent-of-codeTests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/advent-of-code.app/advent-of-code";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/advent-of-code.app/Contents/MacOS/advent-of-code";
 			};
 			name = Debug;
 		};
-		FDE40ECC21B7365000F70A48 /* Release */ = {
+		FD102CDD21B89F2900F3D7B7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = B24U63J96U;
 				INFOPLIST_FILE = "advent-of-codeTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "tech.gaire.advent-of-codeTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "advent-of-codeTests/advent-of-codeTests-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/advent-of-code.app/advent-of-code";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/advent-of-code.app/Contents/MacOS/advent-of-code";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FDE40EA521B7365000F70A48 /* Build configuration list for PBXProject "advent-of-code" */ = {
+		FD102CB821B89F2700F3D7B7 /* Build configuration list for PBXProject "advent-of-code" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FDE40EC521B7365000F70A48 /* Debug */,
-				FDE40EC621B7365000F70A48 /* Release */,
+				FD102CD621B89F2900F3D7B7 /* Debug */,
+				FD102CD721B89F2900F3D7B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FDE40EC721B7365000F70A48 /* Build configuration list for PBXNativeTarget "advent-of-code" */ = {
+		FD102CD821B89F2900F3D7B7 /* Build configuration list for PBXNativeTarget "advent-of-code" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FDE40EC821B7365000F70A48 /* Debug */,
-				FDE40EC921B7365000F70A48 /* Release */,
+				FD102CD921B89F2900F3D7B7 /* Debug */,
+				FD102CDA21B89F2900F3D7B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FDE40ECA21B7365000F70A48 /* Build configuration list for PBXNativeTarget "advent-of-codeTests" */ = {
+		FD102CDB21B89F2900F3D7B7 /* Build configuration list for PBXNativeTarget "advent-of-codeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FDE40ECB21B7365000F70A48 /* Debug */,
-				FDE40ECC21B7365000F70A48 /* Release */,
+				FD102CDC21B89F2900F3D7B7 /* Debug */,
+				FD102CDD21B89F2900F3D7B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = FDE40EA221B7365000F70A48 /* Project object */;
+	rootObject = FD102CB521B89F2700F3D7B7 /* Project object */;
 }
